@@ -6,7 +6,7 @@ VERSION = 8
 all: build
 
 build:
-	docker build -t $(NAME):$(VERSION) --rm image
+	docker build -t $(NAME):$(VERSION) --rm .
 
 tag_latest:
 	docker tag $(NAME):$(VERSION) $(NAME):latest
